@@ -1,4 +1,15 @@
 ext {
+
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 15,
+            targetSdkVersion : 23,
+            versionCode      : 1,
+            versionName      : "1.0.0",
+
+    ]
+
     plugins = [
             bintray: 'com.jfrog.bintray',
             maven  : 'com.github.dcendents.android-maven'
@@ -6,16 +17,16 @@ ext {
 
     bintray = [
             version       : "1.0.0", // 项目本地发布的版本号
-            group         : "com.github.oneway2030", // 项目的group名，第一次定好以后不能改
+            group         : "com.oneway", // 项目的group名，第一次定好以后不能改
 
-            siteUrl       : 'https://github.com/oneway2030/TestLib', // 项目开源地址
-            gitUrl        : 'https://github.com/oneway2030/TestLib.git', // 项目git克隆地址
+            siteUrl       : 'https://github.com/oneway2030/LogUtil', // 项目开源地址
+            gitUrl        : 'https://github.com/oneway2030/LogUtil.git', // 项目git克隆地址
 
             packaging     : 'aar',
-            name          : 'TestLib', // 项目名，随意
-            description   : '测试emmmmmmmm', // 项目描述，随意
+            name          : 'LogUtil', // 项目名，随意
+            description   : 'Android LogUtil', // 项目描述，随意
 
-            binrayLibrary : "TestLib", // 项目在bintray上看到的名称
+            binrayLibrary : "LogUtil", // 项目在bintray上看到的名称
             //以上部分新库都需要根据项目重新配置
             bintrayRepo   : "maven", // 发布到自己在bintray的哪个仓库中，一般默认maven
             bintrayUser   : 'wanwei ', // bintray的用户名

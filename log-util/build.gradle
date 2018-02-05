@@ -14,5 +14,7 @@ android {
 
 dependencies {
 }
-
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
 apply from: 'https://raw.githubusercontent.com/oneway2030/bintray/master/bintray.gradle'
