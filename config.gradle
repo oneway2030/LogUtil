@@ -1,0 +1,32 @@
+ext {
+    plugins = [
+            bintray: 'com.jfrog.bintray',
+            maven  : 'com.github.dcendents.android-maven'
+    ]
+
+    bintray = [
+            version       : "1.0.0", // 项目本地发布的版本号
+            group         : "com.github.oneway2030", // 项目的group名，第一次定好以后不能改
+
+            siteUrl       : 'https://github.com/oneway2030/TestLib', // 项目开源地址
+            gitUrl        : 'https://github.com/oneway2030/TestLib.git', // 项目git克隆地址
+
+            packaging     : 'aar',
+            name          : 'TestLib', // 项目名，随意
+            description   : '测试emmmmmmmm', // 项目描述，随意
+
+            binrayLibrary : "TestLib", // 项目在bintray上看到的名称
+            //以上部分新库都需要根据项目重新配置
+            bintrayRepo   : "maven", // 发布到自己在bintray的哪个仓库中，一般默认maven
+            bintrayUser   : 'wanwei ', // bintray的用户名
+            bintrayLicense: "Apache-2.0", // 在bintray上采用的开源协议
+
+            licenseName   : 'The Apache Software License, Version 2.0', // 开源协议
+            licenseUrl    : 'http://www.apache.org/licenses/LICENSE-2.0.txt', // 开源协议地址
+
+            developerId   : 'oneway2030', // 开发者id
+            developerName : 'oneway', // 开发者姓名
+            developerEmail: 'wanwei2030@gmail.com' // 开发者邮箱
+
+    ]
+}
