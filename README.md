@@ -1,7 +1,7 @@
 # LogUtil
 android 日志工具类
 ```
--依赖  compile 'com.oneway:LogUtil:1.0.0'
+依赖   compile 'com.oneway:LogUtil:1.0.0'
 ```
 
 ##### 这个库不是本人写的. 仅作为学习及自己使用.  有什么问题请去原作者那里看,链接在最下面,
