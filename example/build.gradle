@@ -30,6 +30,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    //    compile 'com.github.oneway2030:LogUtil:v1.0.0'
-    implementation project(':log-util')
+    implementation project(':logutil')
+//    compile 'com.github.oneway2030:LogUtil:v1.0.1'
 }

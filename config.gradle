@@ -16,8 +16,10 @@ ext {
     ]
 
     bintray = [
-            version       : "1.0.0", // 项目本地发布的版本号
-            group         : "com.oneway", // 项目的group名，第一次定好以后不能改
+            // 例:  compile 'com.oneway:LogUtil:1.0.0'
+            version       : "1.0.0",        //例子中 1.0.0 就是这里配置  项目本地发布的版本号
+            group         : "com.oneway",   //例子中 com.oneway 就是这里配置  项目的group名，第一次定好以后不能改
+            artifactId    : 'LogUtil',      //例子中 LogUtil 就是这里配置
 
             siteUrl       : 'https://github.com/oneway2030/LogUtil', // 项目开源地址
             gitUrl        : 'https://github.com/oneway2030/LogUtil.git', // 项目git克隆地址
@@ -35,8 +37,8 @@ ext {
             licenseName   : 'The Apache Software License, Version 2.0', // 开源协议
             licenseUrl    : 'http://www.apache.org/licenses/LICENSE-2.0.txt', // 开源协议地址
 
-            developerId   : 'oneway2030', // 开发者id
-            developerName : 'oneway', // 开发者姓名
+            developerId   : 'wanwei', // 开发者id
+            developerName : 'wanwei', // 开发者姓名
             developerEmail: 'wanwei2030@gmail.com' // 开发者邮箱
 
     ]

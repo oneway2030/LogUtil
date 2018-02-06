@@ -17,6 +17,5 @@ dependencies {
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
-apply from: '../bintray.gradle'
-
-//apply from: 'https://raw.githubusercontent.com/oneway2030/bintray/master/bintray.gradle'
+//apply from: '../bintray.gradle'
+apply from: 'https://raw.githubusercontent.com/oneway2030/bintray/master/bintray.gradle'
