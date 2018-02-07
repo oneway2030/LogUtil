@@ -17,7 +17,7 @@ ext {
 
     bintray = [
             // 例:  compile 'com.oneway:LogUtil:1.0.0'
-            version       : "1.0.3",        //例子中 1.0.0 就是这里配置  项目本地发布的版本号
+            version       : "1.0.4",        //例子中 1.0.0 就是这里配置  项目本地发布的版本号
             group         : "com.oneway",   //例子中 com.oneway 就是这里配置  项目的group名，第一次定好以后不能改
             artifactId    : 'log-util',      //例子中 LogUtil 就是这里配置
 
