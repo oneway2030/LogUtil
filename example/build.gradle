@@ -32,4 +32,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation project(':logutil')
 //    compile 'com.github.oneway2030:LogUtil:v1.0.1'
+//    compile 'com.oneway:log-util:1.0.3'
+    compile 'com.oneway:log-util:1.0.1'
+//    compile 'com.oneway:log-util:latest.release'
 }
