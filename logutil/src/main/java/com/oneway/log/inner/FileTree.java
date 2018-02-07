@@ -17,7 +17,6 @@ import java.util.Date;
 
 /**
  * @Description: 文件树-输出日志信息到文件
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
  * @date: 2017-03-31 14:26
  */
 public class FileTree extends Tree {

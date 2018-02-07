@@ -11,8 +11,6 @@ import java.util.regex.Pattern;
 
 /**
  * @Description: 正则表达式验证格式化输出
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/11 13:41.
  */
 public abstract class LogPattern {
 

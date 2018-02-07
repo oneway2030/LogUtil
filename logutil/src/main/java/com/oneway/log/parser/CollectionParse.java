@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 /**
  * @Description: Collection解析器
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
+ * @author:
  * @date: 16/12/11 11:02.
  */
 public class CollectionParse implements Parser<Collection> {

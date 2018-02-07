@@ -2,7 +2,6 @@ package com.oneway.log.inner;
 
 /**
  * @Description: 日志主干树实现
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
  * @date: 16/12/10 22:33.
  */
 public class SoulsTree extends Tree {

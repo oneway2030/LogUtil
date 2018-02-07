@@ -11,7 +11,6 @@ import java.util.List;
 
 /**
  * @Description: 日志默认配置实现
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
  * @date: 16/12/11 11:08.
  */
 public class LogDefaultConfig implements LogConfig {

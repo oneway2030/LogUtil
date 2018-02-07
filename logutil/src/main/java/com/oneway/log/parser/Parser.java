@@ -5,7 +5,7 @@ import com.oneway.log.common.LogConstant;
 
 /**
  * @Description: 解析器接口
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
+ * @author:
  * @date: 16/12/11 10:59.
  */
 public interface Parser<T> {

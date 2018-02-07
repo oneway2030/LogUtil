@@ -13,8 +13,7 @@ import java.util.List;
 import static java.util.Collections.unmodifiableList;
 
 /**
- * 使用参考
- * https://github.com/xiaoyaoyou1212/ViseLog
+ *
  */
 public class LogUtil {
 

@@ -26,7 +26,6 @@ import javax.xml.transform.stream.StreamSource;
 
 /**
  * @Description: 日志树功能实现
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
  * @date: 16/12/10 21:50.
  */
 public abstract class Tree implements ITree {

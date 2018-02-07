@@ -11,8 +11,6 @@ import java.util.List;
 
 /**
  * @Description: 日志转换工具
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/11 10:55.
  */
 public class LogConvert {
 

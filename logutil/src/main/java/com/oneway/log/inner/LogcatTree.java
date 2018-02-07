@@ -4,7 +4,6 @@ import android.util.Log;
 
 /**
  * @Description: Logcat树-输出日志信息到Logcat
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
  * @date: 2017-03-31 14:26
  */
 public class LogcatTree extends Tree {

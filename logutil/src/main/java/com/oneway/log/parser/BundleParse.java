@@ -7,7 +7,6 @@ import com.oneway.log.common.LogConvert;
 
 /**
  * @Description: Bundle解析器
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
  * @date: 16/12/11 11:01.
  */
 public class BundleParse implements Parser<Bundle> {
