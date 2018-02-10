@@ -13,48 +13,48 @@ android 日志工具类
 ## 使用介绍
 使用前需要进行日志的配置初始化及日志树的添加，默认实现了打印到Logcat的日志树，但需要在应用启动时进行添加，这样才能将日志信息打印到Logcat中。一般需要在自定义Application的OnCreate方法中进行如下配置：
 ```
-ViseLog.getLogConfig()
-	.configAllowLog(true)//是否输出日志
-    .configShowBorders(true)//是否排版显示
-    .configTagPrefix("ViseLog")//设置标签前缀
-    .configFormatTag("%d{HH:mm:ss:SSS} %t %c{-5}")//个性化设置标签，默认显示包名
-    .configLevel(Log.VERBOSE)；//设置日志最小输出级别，默认Log.VERBOSE
-ViseLog.plant(new LogcatTree());//添加打印日志信息到Logcat的树
+LogUtil.getLogConfig()
+         .configAllowLog(true)//是否输出日志
+         .configShowBorders(true)//是否排版显示
+         .configTagPrefix("ViseLog")//设置标签前缀
+         .configFormatTag("%d{HH:mm:ss:SSS} %t %c{-5}")//个性化设置标签，默认显示包名
+         .configLevel(Log.VERBOSE);//设置日志最小输出级别，默认Log.VERBOSE
+LogUtil.plant(new LogcatTree());//添加打印日志信息到Logcat的树
 ```
 
 1、打印基本信息
 ```
-ViseLog.d("test message");
+LogUtil.d("test message");
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212120920265?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 2、打印基本对象
 ```
-ViseLog.d(new Boolean(true));
+LogUtil.d(new Boolean(true));
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212120936582?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 3、打印Bundle对象
 ```
-ViseLog.d(new Bundle());
+LogUtil.d(new Bundle());
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212120736440?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 4、打印Intent对象
 ```
-ViseLog.d(new Intent());
+LogUtil.d(new Intent());
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212120818003?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 5、打印Reference对象
 ```
-ViseLog.d(new SoftReference(0));
+LogUtil.d(new SoftReference(0));
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212121002176?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 6、打印Throwable对象
 ```
-ViseLog.e(new NullPointerException("this object is null!"));
+LogUtil.e(new NullPointerException("this object is null!"));
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212121030673?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
@@ -64,7 +64,7 @@ List<String> list = new ArrayList<>();
 for (int i = 0; i < 5; i++) {
     list.add("test" + i);
 }
-ViseLog.d(list);
+LogUtil.d(list);
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212120800675?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
@@ -74,21 +74,21 @@ Map<String, String> map = new HashMap<>();
 for (int i = 0; i < 5; i++) {
     map.put("xyy" + i, "test" + i);
 }
-ViseLog.d(map);
+LogUtil.d(map);
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212120901816?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 9、打印JSON字符串
 ```
 String json = "{'xyy1':[{'test1':'test1'},{'test2':'test2'}],'xyy2':{'test3':'test3','test4':'test4'}}";
-ViseLog.json(json);
+LogUtil.json(json);
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212120844863?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 10、打印XML字符串
 ```
 String xml = "<xyy><test1><test2>key</test2></test1><test3>name</test3><test4>value</test4></xyy>";
-ViseLog.xml(xml);
+LogUtil.xml(xml);
 ```
 ![这里写图片描述](http://img.blog.csdn.net/20161212121050532?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGlhb3lhb3lvdTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
@@ -97,7 +97,7 @@ ViseLog.xml(xml);
 其核心思想是将日志系统看成一个森林对象统一进行维护，森林可以添加树和移除树，只有添加了指定的功能树才会有日志输出。日志功能由ITree接口进行定义，统一由主干树SoulsTree来分配，并将日志输出功能提供给上层实现，默认已经实现了日志打印到Logcat的树DefaultTree。
 
 2、自定义解析器
-实现Parser接口，并实现parseClassType()和parseString()方法，再通过addParserClass()配置到ViseLog就行，详细可参考文档[自定义对象打印器](https://github.com/pengwei1024/LogUtils/blob/master/doc/custom_parser.md)；
+实现Parser接口，并实现parseClassType()和parseString()方法，再通过addParserClass()配置到LogUtil就行，详细可参考文档[自定义对象打印器](https://github.com/pengwei1024/LogUtils/blob/master/doc/custom_parser.md)；
 
 3、个性标签设置详解
 
@@ -113,7 +113,7 @@ ViseLog.xml(xml);
 | 方法 | 描述 | 取值 | 缺省 |
 | --- | ---- | --- | --- |
 | configAllowLog | 是否允许日志输出 | boolean | true |
-| configTagPrefix | 日志log的前缀 | String | "ViseLog" |
+| configTagPrefix | 日志log的前缀 | String | "LogUtil" |
 | configShowBorders | 是否显示边界 | boolean | false |
 | configLevel | 日志显示最小等级 | Log | Log.VERBOSE |
 | addParserClass | 自定义对象打印 | Parser | 无 |
